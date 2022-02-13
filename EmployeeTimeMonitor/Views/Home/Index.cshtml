@@ -15,7 +15,7 @@
         {
             @if(employee.Status == EmployeStatus.Working)
             {
-              string status = EmployeStatus.Out.ToString();
+              string status = EmployeStatus.Working.ToString();
               
                 <button asp-route-employeeName="@employee.Name" asp-route-status="@status" asp-route-id="@employee.Id" style="border:1px solid; background-color:Pink; width: 200px; height:200px">
                     @employee.Name
